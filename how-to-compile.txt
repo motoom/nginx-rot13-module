@@ -1,0 +1,14 @@
+
+als root in /usr/ports/www/nginx:
+
+# setenv CONFIGURE_ARGS "--add-module=/home/user/prj/nginx-module"
+
+# make install; rehash
+
+LET OP: niet 'make clean' uitvoeren, wist configuratie.
+
+Hercompileren:
+
+# make deinstall; rm work/.build_done.nginx._usr_local  work/nginx-1.2.5/objs/nginx; make install; rehash
+
+
